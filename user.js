@@ -16,7 +16,7 @@ $DOC.sections['header-panel'] =
 if ($OPT.editable) {
     $DOC.sections['footer-panel'] =
 '[footer-layout scheme=line]\
-* [repo on GitHub](https://github.com/facdev/docs)\n\
+* [repo on GitHub](https://github.com/fobia/docs)\n\
 ***\n\
 * © 2013 [aplib on GitHub](https://github.com/aplib/markdown-site-template) Artistic license 2.0\n\
 * [Редактировать эту страницу](?edit)\
