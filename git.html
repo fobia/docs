@@ -69,13 +69,27 @@ git config --global credential.helper cache
 
 В буфер
 
-    xclip -sel clip < ~/.ssh/facdev_rsa.pub-->
+    xclip -sel clip < ~/.ssh/facdev_rsa.pub
+
+
+
+Также есть такая возможность, чтобы GIT не ругался на измененные файлы (и не пытался их коммитить по git commit -a):
+
+
+    git update-index --assume-unchanged файл скажет git’у чтобы он игнорировал изменения в соответствующем файле;
+    git update-index --no-assume-unchanged файл вернет обратно мониторинг этого файла.
+
+
+Сие полезно для таких файлов как .htaccess.
+-->
+
 
 
 
 <!--right-side-panel -->
 
 <noscript><div class="alert alert-warning"><h3>Для просмотра этого сайта необходимо включить JavaScript в вашем браузере</h3></div></noscript>
+
 
 
 </body>
