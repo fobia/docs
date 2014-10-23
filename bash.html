@@ -15,6 +15,11 @@
 
     cat logs/error.log | sed -e 's/.* [client [0-9.]\{7,15\}] //' -e '/PHP  [0-9]*/d' -e '/PHP Stack trace/d' | sort | uniq -c | sort
 
+
+Проблемные ссылки
+
+    grep '\[21/Oct/2014' logs/access.log | grep 'HTTP[^"]*" [54]' | sed 's/^.*0000] "//' | uniq -c | sort -n -r
+
 -->
 
 
