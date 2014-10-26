@@ -11,6 +11,10 @@
 
 <!--content-panel
 
+Файлы и время их модификации
+    find req -type f -printf '%TY-%Tm-%Td %Tr\t%p\n' | sort -r --field-separator=\t
+
+
 Уникальные ошибки PHP
 
     cat logs/error.log | sed -e 's/.* [client [0-9.]\{7,15\}] //' -e '/PHP  [0-9]*/d' -e '/PHP Stack trace/d' | sort | uniq -c | sort
