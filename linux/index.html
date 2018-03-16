@@ -13,7 +13,20 @@
 ## Programm
 
 - `cfdisk` - Размечаем диск, создаем файловую систему
+- `timeshift` - https://losst.ru/otkat-sistemy-ubuntu
 
+```bash
+# See: https://losst.ru/rezervnoe-kopirovanie-ubuntu
+
+# Создать
+dpkg --get-selections | grep -v deinstall > backup.txt
+
+# Востановить
+sudo dpkg --set-selections < backup.txt
+sudo apt-get -y update
+sudo apt-get dselect-upgrade
+
+```
 
  -->
 
